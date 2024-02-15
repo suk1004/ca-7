@@ -1,0 +1,81 @@
+@import url(common.css);
+
+.com_container{
+  width: 100%;
+  height: 550px;
+  background-color: yellow;
+  position: relative;
+  margin: auto;
+}
+
+.com_container .com_items{
+  width: 1200px;
+  height: 550px;
+  /* overflow: hidden; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: orange;
+}
+.com_items>ul{
+  position: relative;
+  display: flex;
+}
+.com_items>ul .com_item{
+  padding: 15px;
+  margin: 0 20px 15px 0;
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+.com_item .com_p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  border-bottom: 1px solid #ccc;
+  /* border: 1px solid red; */
+}
+.com_p>a{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #444;
+  background: url(../image/comp-01.png) center center;
+  margin-right: 20px;
+}
+.com_p ul li:first-child{
+  font-size: 18px;
+  color: #333;
+}
+.com_p ul li i{
+  font-style: normal;
+  color: #999;
+  font-weight: 300;
+}
+.com_item>ul{
+  margin: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.com_item>ul li{
+  text-align: left;
+  line-height: 50px;
+}
+.com_item>ul li strong{
+  font-size: 20px;
+  color: #444;
+  font-weight: 500;
+}
+
+.com_item>ul li:last-child{
+  font-weight: 400;
+  color: #bbb;
+}
+.com_item>ul li:last-child:hover{
+  color: #32E6C7;
+}

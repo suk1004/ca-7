@@ -1,0 +1,120 @@
+@import url(common.css);
+
+#yka{
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.yka-container{
+  width: 1200px;
+  height: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid red;
+}
+.yka-container .title button{
+  border: none;
+  width: 170px;
+  height: 44px;
+  background-color: #ac181e;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  text-indent: -13px;
+}
+.yka-container .title button:after{
+  content: '\f054';
+  font-family: fontawesome;
+  position: absolute;
+  transform: translate(16px, 1px);
+}
+.profile-list{
+  display: flex;
+  margin-left: 130px;
+}
+.profile-list ul:first-child{
+  transform: translateY(-48px);
+}
+.profile-list ul:last-child{
+  transform: translateY(48px);
+}
+
+.image-wrap{
+  width: 200px;
+  height: 200px;
+  border-radius: 32px;
+  margin: 20px 22px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+.image-wrap:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: 0.5s;
+}
+.image-wrap img{
+  width: inherit;
+}
+.p-des{
+  position: absolute;
+  width: inherit;
+  height: 94px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 22px 22px 0 0;
+  bottom: -100%;
+  left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  z-index: 10;
+  transition: 0.5s;
+}
+.image-wrap:hover{
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,1);
+}
+.image-wrap:hover .p-des{
+  bottom: 0;
+  opacity: 1;
+}
+.image-wrap:hover:after{
+  opacity: 1;
+}
+.p-des p{
+  width: 43px;
+  height: 43px;
+  background-color: #3d3d3d;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.p-des a{
+  display: block;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.p-des a:hover{
+  color: #ac181e;
+}
+.p-des span{
+  font-size: 13px;
+  color: #777;
+}

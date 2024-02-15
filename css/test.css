@@ -1,0 +1,66 @@
+@import url(common.css);
+
+.thumbs_ban{  /*배너전체영역*/
+	position:relative;
+	width:803px;
+	height:152px;
+	background:yellow; 
+	margin: auto;
+}
+.thumbs_ban .thumbs{   /*슬라이드영역*/
+	width:780px; /*보여주는 폭을 줄이고자 할때 가로폭을 맞춰서 줄여줌*/
+	height:100px;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	background:orange;
+	overflow:hidden;
+}
+.thumbs_ban .thumbs ul{
+	display: flex;
+	position:relative;
+}
+.thumbs_ban .thumbs ul li{
+	margin-right: 10px;
+	width: 158px;
+  border-radius: 20px;
+  border: 1px solid red;
+}
+.thumbs ul li a img{
+  width: 158px;
+  border-radius: 20px;
+}
+
+/*좌우버튼*/
+.ban_left{
+	position:absolute;
+	top:50px;
+	left:30px;
+	cursor:pointer;
+}
+.ban_right{
+	position:absolute;
+	top:50px;
+	right:10px;
+	cursor:pointer;
+}
+.ban_btn span{
+	display:inline-block;
+	width:47px;
+	height:55px;	
+}
+.left_btn,
+.right_btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* color: #fff; */
+  font-size: 50px;
+  z-index: 100;
+}
+.left_btn{
+  left: -10px;
+}
+.right_btn{
+  right: -10px;
+}

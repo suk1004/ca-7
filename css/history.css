@@ -1,0 +1,69 @@
+@import url(common.css);
+
+body{
+  width: 100%;
+  text-align: center;
+}
+.title h2{
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  padding-top: 140px;
+  font-size: 38px;
+}
+.title p{
+  font-weight: 300;
+  color: #888;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+
+/* 여기부터 복사해가면 됨________________________ */
+#history{
+  width: 100%;
+  background: url(../image/history-01.jpg
+  ) no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 140px;
+}
+
+.h-items{
+  width: 880px;
+  height: 280px;
+  margin: 74px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  /* border: 1px solid red; */
+}
+
+.hitem{
+  width: 280px;
+  height: 130px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.hitem li:first-child{
+  letter-spacing: 0.2px;
+  color: #ccc;
+  font-weight: 200;
+}
+.hitem li:last-child{
+  font-size:40px;
+  font-weight: 100;
+}
+.hitem:hover{
+  background-color: rgba(136, 15, 19, 0.8);
+  text-shadow: 0 0 10px rgb(52, 0, 0);
+}
+
+.hitem:hover>li{
+  /* text-shadow: 0 0 5px rgba(0,0,0,0.9); */
+}
